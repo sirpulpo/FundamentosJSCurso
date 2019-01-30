@@ -9,6 +9,8 @@
       // console.log('a')
       // setTimeout(() => console.log('b'), 0)
       // console.log('c')
+      // el setTimeout(() => console.log('b'), 0): envia el proceso a la cola de tareas por eso aparece al final, 
+      // pues JS continua con su main mientras el navegador tiene el proceso en callback y al terminarlo ya lo pone la pila de tareas
 
       setTimeout(() => console.log('d'), 2000)
       for (var i = 0; i < 10000000000; i++) {
